@@ -1,1 +1,1 @@
-ECHO is on.
+This is a junk folder. Not so useful codes, i use this to excercise my code outcomes

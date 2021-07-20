@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Library</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="script.js" defer></script>
+</head>
+<body>
+
+	<header class="header">
+		<h1 class="header_title">Library</h1>
+	</header>
+	<main class="main">
+		<button class="button button--green button--large js-new-book-button">
+			New Book
+		</button>
+	</main>
+	<div class="popup js-popup">
+		<form class="popup__form js-popup-form">
+			<h3 class="popup__title"> Add new book</h3>
+			<input
+          class="popup__input"
+          type="text"
+          id="title"
+          placeholder="Title"
+          required
+        />
+        <input
+          class="popup__input"
+          type="text"
+          id="author"
+          placeholder="Author"
+          required
+        />
+        <input
+          class="popup__input"
+          type="number"
+          id="pages"
+          placeholder="Pages"
+          required
+        />
+        <div class="popup__is-read">
+        	<label for="is-read">Read?</label>
+          <input class="popup__checkbox" type="checkbox" id="is-read" />
+          <button class="button button--green button--medium" type="submit">Submit</button>
+        </div>
+		</form>
+	</div>	
+	<div class="overlay jsoverlay"></div>
+</body>
+</html>
