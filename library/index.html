@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/4c536a6bd5.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container">
+            <h1 class="title">Library</h1>
+            <nav>
+                <div class="ldss-dual-ring active" id="loadingRing"></div>
+                <div class="logged-out">
+                    <button class="btn tn-default btn-log-in" id="logOutBtn">
+                        Log Out
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- MAIN -->
+
+    <main class="main">
+        <button class="btn btn-green btn-large" id="addBookBtn">Add Book</button>
+        <div class="books-grid" id="booksGrid"></div>
+    </main>
+
+    <!-- Footer -->
+    <div class="modal" id="addBookModal">
+        <form class="add-book-form" id="addBookForm">
+            <h3 class="bigTitle">Add new book</h3>
+            <input type="text" class="input" id="title" placeholder="Title" required>
+            <p class="error-msg" id="errorMsg"></p>
+            <input type="text" class="input" id="author" placeholder="Author" required>
+            <input type="number" class="input" id="pages" placeholder="Pages" required>
+            <div class="is-read">
+                <label for="id-read">Read?</label>
+                <input type="checkbox" class="checkbox" id="isRead" />
+            </div>
+            <button class="btn btn-green btn-medium" type="submit">Submit</button>
+        </form>
+    </div>
+
+    <!-- Account Modal -->
+    <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth.js"></script>
+    
+</body>
+</html>
