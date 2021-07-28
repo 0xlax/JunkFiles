@@ -24,7 +24,13 @@
         <div class="container">
             <h1 class="title">Library</h1>
             <nav>
-                <div class="ldss-dual-ring active" id="loadingRing"></div>
+                <div class="lds-dual-ring active" id="loadingRing"></div>
+                <div class="lds-dual-ring active" id="loadingRing"></div>
+                <div class="logged-out" id="loggedOut">
+                  <button class="btn btn-default btn-log-in" id="logInBtn">
+                    Log in
+                  </button>
+                </div>
                 <div class="logged-out">
                     <button class="btn tn-default btn-log-in" id="logOutBtn">
                         Log Out
@@ -58,9 +64,27 @@
     </div>
 
     <!-- Account Modal -->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-analytics.js"></script>
     <script src="https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth.js"></script>
+
+    
+    <script>
+
+      var firebaseConfig = {
+        apiKey: "AIzaSyDDOxJ1WRsmZGoLUMaIgHKwsLmeOjJYkPE",
+        authDomain: "library-c117c.firebaseapp.com",
+        projectId: "library-c117c",
+        storageBucket: "library-c117c.appspot.com",
+        messagingSenderId: "233958824731",
+        appId: "1:233958824731:web:cba0f261cfd896a5a791be",
+        measurementId: "G-VWB8NQ2903"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+    </script>
     
 </body>
 </html>
