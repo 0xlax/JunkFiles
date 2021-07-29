@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API-Temps</title>
+    <link rel="stylesheet" href="styles.css" class="css">
+</head>
+<body>
+
+    <footer class="footer">
+        <button onclick="window.location.reload();">New Gif</button>
+    </footer>
+
+<div class="card">
+    <div style="text-align:center;width: 300px;margin: 0 auto;">
+        
+        <div class="containers">
+         <header class="header">
+             <h1 class="title">Mlem :3</h1> <3</h1>
+            
+             <!-- <button onclick="history.go(0);">Previous Gif</button> -->
+         </header>
+        </div>
+     
+        <section style="text-align:center;width: 300px;">
+         <img src="#" alt="dogs">
+         </section> 
+     
+         
+     
+         <script>
+             const img = document.querySelector('img');
+             fetch('https://api.giphy.com/v1/gifs/translate?api_key=zQkaW1BdHsVpBcmM9Bv4tkugduArQTTC&s=cats')
+             .then(function(response) {
+                 return response.json()
+             })
+             .then(function(response) {
+                 img.src = response.data.images.original.url;
+             });
+         </script>
+         </div>
+</div>
+    
+</body>
+</html>
