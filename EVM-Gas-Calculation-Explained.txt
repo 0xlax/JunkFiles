@@ -1,0 +1,27 @@
+*metadata*
+1. Base gas Cost.
+
+	cstatic gas cost to run the given instructions which may differ based on the operands used
+
+2. Stack Height Requirement.
+
+	min stack height required to execute the instructions
+
+3. Stack Height Change.
+	
+	Difference in Stack Height beofre and after instruction executions. can be negative if instruction pops more intems than pushes
+
+
+		Examples:
+
+	| opcode  | base gas cost | stack height requirement | stack height change |
+	| ------- | ------------- | ------------------------ | ------------------- |
+	| ADD     | 3             | 2                        | -1                  |
+	| EXP     | 50            | 2                        | -1                  |
+	| DUP4    | 3             | 4                        | 1                   |
+	| SWAP1   | 3             | 2                        | 0                   |
+	| ADDRESS | 2             | 0                        | 1                   |
+	| CALL    | 700           | 7                        | -6                  |
+	
+
+Basic Block: https://en.wikipedia.org/wiki/Basic_block
