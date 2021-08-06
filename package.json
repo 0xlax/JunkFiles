@@ -1,0 +1,24 @@
+{
+  "name": "JunkFiles",
+  "version": "1.0.0",
+  "description": "This is a junk folder. Not so useful codes, i use this to excercise my code outcomes",
+  "main": "index.js",
+  "dependencies": {
+    "web3": "^1.4.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harshithlaxman/JunkFiles.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/harshithlaxman/JunkFiles/issues"
+  },
+  "homepage": "https://github.com/harshithlaxman/JunkFiles#readme"
+}
